@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../css/OpenSans-Regular.woff2') format('woff2'),
+        url('../css/Raleway-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../css/OpenSans-Regular.woff2') format('woff2'),
+        url('../css/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --font-special: "Raleway";
+    --font-basic: "Open Sans";
+
+    --color-logo: #08a6e4;
+    --color-shadow: #00000029;
+    --color-menu: #a5a5a5;
+    --color-button: #08A6E4;
+    --color-button-shadow: #07ACE629;
+    --color-dark: black;   
+}
+
+.container {
+    max-width: 1352px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: var(--font-basic);
+}
+
+a {
+    text-decoration: none;
+}
+
+/*-----HEADER-----*/
+
+.header {
+height: 70px;
+box-shadow: 0px 3px 6px var(--color-shadow);
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    font-family: var(--font-special);
+    font-size: 35px;
+    line-height: 37px;
+    font-weight: 200;
+    color: var(--color-logo);
+    }
+
+.header__menu {
+   display: flex;
+  
+}
+
+.menu__link {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: var(--color-menu);
+    padding: 28px 18px 22px;
+}
+
+.menu__link:hover, :focus {
+    color: var(--color-dark);
+    text-decoration: underline 4px solid #08A6E4;
+}
+
+/*-----OPENING SECTION-----*/
+
+.opening {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.opening__content {
+    margin-top: 130px;
+    text-align: center;
+}
+
+.opening__title {
+    font-family: var(--font-special);
+    font-size: 49px;
+    line-height: 57px;
+    color: var(--color-dark);
+    }
+
+.opening__text {
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--color-dark);
+    margin: 20 0 38px 0;
+}
+
+.opening__image {
+    width: 100%;
+    height: auto;
+}
+
+.btn {
+font-weight: 700;
+color: white;
+border-radius: 40px;
+padding: 16px 65px;
+border: none;
+display: inline-block;
+}
+
+.btn--primary {
+ background: var(--color-button);
+ box-shadow: 3px 10px 14px var(--color-button-shadow);   
+}
+
+.btn--large {
+    padding: 22px 155px;
+}
+
+/*-----STATISTIC SECTION-----*/
+
+.statistic {
+    margin-top: 100px;
+}
+
+h2 {
+    font-family: var(--font-special);
+    font-size: 36px;
+    line-height: 42px;
+    color: var(--color-dark);
+    text-align: center;
+}
+
+.statistic__container {
+    display: flex;
+    justify-content: space-between;
+    
+    max-width: 800px;
+    margin: 100px auto 120px;
+}
+
+.statistics__single {
+    max-width: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    font-family: var(--font-raleway);
+  }
+  
+  .statistics__circle {
+    border-radius: 50%;
+    width: 63px;
+    height: 63px;
+    position: relative;
+  }
+  
+  .statistics__img {
+    position: absolute;
+  }
+  
+  .statistics__single:nth-child(1) .statistics__circle {
+    background-color: var(--color-redish);
+  }
+  
+  .statistics__single:nth-child(1) .statistics__img {
+    top: 0;
+    left: 45%;
+  }
+  
+  .statistics__single:nth-child(2) .statistics__circle {
+    background-color: var(--color-primary);
+  }
+  
+  .statistics__single:nth-child(2) .statistics__img {
+    top: 14px;
+    left: 47%;
+  }
+  
+  .statistics__single:nth-child(3) .statistics__circle {
+    background-color: var(--color-green);
+  }
+  
+  .statistics__single:nth-child(3) .statistics__img {
+    top: 6px;
+    left: 50%;
+  }
+
+  .statistics__number {
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: 0.1875rem;
+    margin-top: 13px;
+  }
+  
+  .statistics__description {
+    color: var(--color-grey);
+    margin-top: 19px;
+  }
+  
+  
