@@ -170,7 +170,7 @@ h2 {
     flex: 1 1 33.33%;
     align-items: center;
     text-align: center;
-    font-family: var(--font-raleway);
+    font-family: var(--font-special);
   }
   
   .statistics__circle {
@@ -237,7 +237,7 @@ h2 {
   }
 
 .benefits_title {
-    font-family: var(--font-raleway);
+    font-family: var(--font-special);
     font-size: 36px;
     line-height: 42px;
 
@@ -371,5 +371,132 @@ h2 {
     margin-top: 55px;
   }
   
+   /*-----PRICES SECTION-----*/ 
+
+   .prices {
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .prices__boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+   }
+
+   .prices__title {
+    font-family: var(--font-special);
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+   }
+
+   .pricing__box {
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px auto;
+    border: 1px solid var(--accent-color);
+    border-radius: 18px;
+   }
+
+   .pricing__details {
+    margin-top: 34px;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+   .pricing__type {
+    font-family: var(--font-special);
+    font-size: 20px;
+    line-height: 1px;
+    font-weight: 700;
+    }
+
+  .pricing__price {
+    font-size: 46px;
+    font-weight: 300;
+    color: var(--accent-color);
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .pricing__limited {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.75rem;
+    font-family: var(--font-raleway);
+    font-weight: 700;
+  }
+ 
+ .pricing__items {
+    text-align: center;
+ } 
+
+  .pricing__item {
+    font-size: 14px;
+    line-height: 41px;
+    margin-bottom: 20px;
+  }
+  
+  .pricing__item::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url("../images/Checkmark-1.svg");
+  }
+
+  .pricing__item--not::before {
+    background-image: url("../images/Close.svg");
+  }
+
+  .pricing__box .btn {
+    position: relative;
+    bottom: -25px;
+    font-size: 0.8125rem;
+    background-color: var(--accent-color);
+  }
+  
+  /*---BASIC BOX---*/
+
+  .pricing__box--basic {
+    --accent-color: var(--color-redish);
+   }
+   
+   .pricing__box--basic .pricing__price {
+     margin-bottom: 30px;
+   }
+
+/*---PROFFESIONAL BOX---*/
+
+.pricing__box--professional {
+--accent-color: #07ACE6;
+width: 400px;
+margin: 0 40px;
+box-shadow: 5px 1px 27px #07ACE629;
+  }
+  
+  .pricing__box--professional .pricing__type {
+    font-size: 21px;
+  }
+  
+  .pricing__box--professional .pricing__item {
+    margin-bottom: 25px;
+  }
+
+  /*---PREMIUM BOX---*/
+
+  .pricing__box--premium {
+    --accent-color: var(--color-green);
+  }
+
+  /*-----CONTACT SECTION-----*/ 
   
   
