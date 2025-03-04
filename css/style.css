@@ -141,7 +141,7 @@ display: inline-block;
 
 /*-----STATISTIC SECTION-----*/
 
-.statistic {
+.statistics {
     margin-top: 100px;
 }
 
@@ -153,7 +153,7 @@ h2 {
     text-align: center;
 }
 
-.statistic__container {
+.statistics__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -163,7 +163,7 @@ h2 {
 }
 
 .statistics__single {
-    /*max-width: 160px;*/
+    max-width: 160px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -381,7 +381,7 @@ h2 {
     align-items: center;
    }
 
-   .prices__boxes {
+   .pricing__boxes {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -500,8 +500,7 @@ box-shadow: 5px 1px 27px #07ACE629;
   /*-----CONTACT SECTION-----*/ 
 
   .contact {
-    margin: 150px 630px 60px;
-    padding: auto;
+    padding: 80px 100px 100px;
     display: flex;
     justify-content: center;
   }
@@ -510,7 +509,7 @@ box-shadow: 5px 1px 27px #07ACE629;
     width: 50%;
   }
 
-  .contact__column:first-of-type {
+ .contact__column:first-of-type {
     margin-right: 100px;
   }
 
