@@ -498,5 +498,47 @@ box-shadow: 5px 1px 27px #07ACE629;
   }
 
   /*-----CONTACT SECTION-----*/ 
-  
+
+
+    /*-----FOOTER-----*/ 
+
+.footer {
+  height: 90px;
+  background-color: var(--color-background-light);
+  box-shadow: 0px -5px 40px var(--color-shadow);
+  padding: 20px 0;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+      
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  padding-left: 25px;
+ }
+      
+.footer__logo {
+  font-family: var(--font-special);
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 200;
+  color: var(--color-primary);
+  margin-bottom: 7px;
+}
+
+.footer__copywriter {
+  font-size: 11px;
+  color: #A5A5A5;
+  margin-top: 6px;
+}
+
+.icons a:first-of-type {
+  margin-right: 25px;
+}
+
   
