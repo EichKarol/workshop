@@ -175,29 +175,48 @@
 
 </section>
 
-<section class="contact container">
-
+<section class="contact container" id="contact">
+<div class="contact__column">
   <h2 class="contact__title">Any questions?</h2>
   <p class="contact_description">Leave your email address or call us!</p>
-  
-  <div class="contact_description--email">info@bestshop.xyz</div>
-  <div class="contact_description--phone">123 456 789</div>
+ 
+  <div class="contact__details"> 
+    <a class="details__item" href="mailto:info@bestshop.xyz"><img src="./images/Mail Icon.svg"> info@bestshop.xyz </a>
+    <a class="details__item" href="tel:123456789"><img src="./images/Phone Icon.svg">123 456 789</a>
+  </div>
+</div>
 
-  <form>
-      <label for="Name">NAME</label>
-      <input type="text">
+<div class="contact__details"></div>
+  <form class="form">
+     <div class="form__field">
+      <label class="form__label" for="name">Name</label>
+      <input type="text" class="form__input name" id="name" />
+    </div>
 
-      <label for="email">EMAIL</label>
-      <input type="email">
+    <div class="form__field">
+      <label class="form__label" for="email">E-mail</label>
+      <input type="email" class="form__input email" id="email" />
+    </div>
 
-      <input type="checkbox">
-      <p>I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
+    <div class="form__consent">
+      <label class="form__checkbox">
+        <input type="checkbox"/>
+        <span class="checkbox"></span>
+        <p class="consent__text">
+          I hereby give consent for my personal data included in my
+          application to be processed for the purposes of the recruitment
+          process under the European Parliament's and Council of the
+          European Union Regulation on the Protection of Natural Persons as
+          of 27 April 2016, with regard to the processing of personal data
+          and on the free movement of such data, and repealing Directive
+          95/46/EC (Data Protection Directive)
+        </p>
+      </label>
+    </div>
 
-      <button class="btn btn--primary">Send</button>
-
-
+      <button type="submit" class="btn btn--primary">Send</button>
   </form>
-  
+</div>
   </section>
 
   <footer class="footer">
