@@ -450,7 +450,7 @@ h2 {
     height: 11px;
     display: inline-block;
     margin-right: 10px;
-    background-image: url("../images/Checkmark-1.svg");
+    background-image: url("../images/Checkmark-2.svg");
   }
 
   .pricing__item--not::before {
@@ -621,7 +621,7 @@ box-shadow: 5px 1px 27px #07ACE629;
   }
   
   .form__checkbox input:checked ~ .checkbox {
-    background-image: url(../assets/Checkmark.svg);
+    background-image: url(../images/Checkmark-1.svg)
     background-position: center;
     background-size: 50%;
     background-repeat: no-repeat;
